@@ -58,7 +58,7 @@ The module provides users with a convenient and intuitive interface for visualiz
 
 ## Resources and Links
 
-- R-gallery company — [r-gallery.ru](https://r-gallery.ru](https://www.r-gallery.ru/ulica_akademgorodok_kja/))  
+- R-gallery company — [r-gallery.ru](https://www.r-gallery.ru/ulica_akademgorodok_kja/) 
 (Local 3D staircase model in the app bundle corresponds to the real object on the company website)  
 - Additional 3D model example (robot) taken from Apple’s official resource:  
 Apple Developer AR Quick Look
