@@ -11,7 +11,8 @@ import SwiftUI
 struct ARModelViewApp: App {
     var body: some Scene {
         WindowGroup {
-            SelectARModelView()
+           SelectARModelView()
+            //ARModelViewer(url: Bundle.main.usdzURL("robot")!)
         }
     }
 }

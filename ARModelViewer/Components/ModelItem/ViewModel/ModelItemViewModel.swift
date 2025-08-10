@@ -8,10 +8,13 @@
 import SwiftUI
 
 final class ModelItemViewModel: ObservableObject {
-    @Published var image: UIImage? = nil
-    var generator: IThumbnailGenerator
+    @Published var image: UIImage?
+    private var generator: IThumbnailGenerator
     
-    init(generator: IThumbnailGenerator = ThumbnailGenerator()) {
+    // MARK: - Initialization
+    init(
+        generator: IThumbnailGenerator = ThumbnailGenerator()
+    ) {
         self.generator = generator
     }
 }
@@ -19,12 +22,8 @@ final class ModelItemViewModel: ObservableObject {
 // MARK: - Public Functions
 extension ModelItemViewModel {
     @MainActor
-    func getImage(url: URL, size: CGSize = CGSize(width: 100, height: 100)) async {
-        do {
+        func getImageAndName(url: URL, size: CGSize = CGSize(width: 100, height: 100)) async throws {
             let image = try await generator.generate(for: url, size: size)
             self.image = image
-        } catch {
-            print(error)
         }
-    }
 }

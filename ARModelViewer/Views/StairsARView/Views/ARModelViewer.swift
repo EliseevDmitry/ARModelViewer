@@ -8,12 +8,15 @@
 import SwiftUI
 import RealityFoundation
 
+//инициализация AR компонента и переданного в него значения
 struct ARModelViewer: View {
     @StateObject
     private var viewModel: ARViewerViewModel
-    init(viewModel: ARViewerViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
-    }
+    let modelURL: URL
+    init(url: URL) {
+        self.modelURL = url
+        _viewModel = StateObject(wrappedValue: ARViewerViewModel(url: url))
+        }
     var body: some View {
         Group{
             if let entity = viewModel.modelEntity {
@@ -32,8 +35,8 @@ struct ARModelViewer: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        ARModelViewer(viewModel: ARViewerViewModel(modelName: ""))
-    }
-}
+//#Preview {
+//    NavigationStack {
+//        ARModelViewer(model: "")
+//    }
+//}

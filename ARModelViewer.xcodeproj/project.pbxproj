@@ -30,12 +30,28 @@
 		263082792E2E0CB200A6D8C4 /* ARViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263082782E2E0CB200A6D8C4 /* ARViewerViewModel.swift */; };
 		2630827E2E2E159600A6D8C4 /* FocusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630827D2E2E159500A6D8C4 /* FocusEntity.swift */; };
 		263082802E2E17E300A6D8C4 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630827F2E2E17E300A6D8C4 /* ARViewContainer.swift */; };
+		2633C5B32E4882D5000C6F0D /* ThumbnailGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5B22E4882D5000C6F0D /* ThumbnailGeneratorTests.swift */; };
+		2633C5B82E489353000C6F0D /* MockGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5B72E489353000C6F0D /* MockGenerator.swift */; };
+		2633C5BB2E48944C000C6F0D /* ARModelViewerErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5BA2E48944C000C6F0D /* ARModelViewerErrors.swift */; };
+		2633C5C02E489A86000C6F0D /* MockStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5BF2E489A86000C6F0D /* MockStorageService.swift */; };
+		2633C5C22E489AB5000C6F0D /* MockTimerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5C12E489AB5000C6F0D /* MockTimerProvider.swift */; };
+		2633C5C42E489B34000C6F0D /* AROnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633C5C32E489B34000C6F0D /* AROnboardingViewModelTests.swift */; };
 		26B510702E42FC2900D4A76B /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5106F2E42FC2900D4A76B /* Extension+Font.swift */; };
 		26B510722E42FC6100D4A76B /* Manrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26B510712E42FC6100D4A76B /* Manrope.ttf */; };
 		26B510752E43005200D4A76B /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B510742E43005200D4A76B /* Extension+View.swift */; };
 		26EA8CA82E423770004050F2 /* DocumentPikcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CA72E423770004050F2 /* DocumentPikcer.swift */; };
 		26EA8CB12E425A6B004050F2 /* AROnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CB02E425A6B004050F2 /* AROnboardingView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2633C5AC2E4880B3000C6F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 263082522E2E0BA700A6D8C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 263082592E2E0BA700A6D8C4;
+			remoteInfo = ARModelViewer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		26031D662E45BDAD001C302E /* ModelItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelItemView.swift; sourceTree = "<group>"; };
@@ -62,6 +78,13 @@
 		263082782E2E0CB200A6D8C4 /* ARViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewerViewModel.swift; sourceTree = "<group>"; };
 		2630827D2E2E159500A6D8C4 /* FocusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusEntity.swift; sourceTree = "<group>"; };
 		2630827F2E2E17E300A6D8C4 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		2633C5A82E4880B2000C6F0D /* ARModelViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARModelViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2633C5B22E4882D5000C6F0D /* ThumbnailGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailGeneratorTests.swift; sourceTree = "<group>"; };
+		2633C5B72E489353000C6F0D /* MockGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGenerator.swift; sourceTree = "<group>"; };
+		2633C5BA2E48944C000C6F0D /* ARModelViewerErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelViewerErrors.swift; sourceTree = "<group>"; };
+		2633C5BF2E489A86000C6F0D /* MockStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageService.swift; sourceTree = "<group>"; };
+		2633C5C12E489AB5000C6F0D /* MockTimerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimerProvider.swift; sourceTree = "<group>"; };
+		2633C5C32E489B34000C6F0D /* AROnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROnboardingViewModelTests.swift; sourceTree = "<group>"; };
 		26B5106F2E42FC2900D4A76B /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
 		26B510712E42FC6100D4A76B /* Manrope.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Manrope.ttf; sourceTree = "<group>"; };
 		26B510732E42FC8F00D4A76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -86,14 +109,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2633C5A52E4880B2000C6F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		26031D642E45BD1F001C302E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				260E77BD2E44A43600A25A72 /* ViewModel */,
 				260E77BC2E44A42C00A25A72 /* View */,
+				260E77BD2E44A43600A25A72 /* ViewModel */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -194,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				2630826B2E2E0BB300A6D8C4 /* ARModelViewer */,
+				2633C5B12E4880C3000C6F0D /* ARModelViewerTests */,
 				2630825B2E2E0BA700A6D8C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -202,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				2630825A2E2E0BA700A6D8C4 /* ARModelViewer.app */,
+				2633C5A82E4880B2000C6F0D /* ARModelViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,12 +244,11 @@
 				26B510732E42FC8F00D4A76B /* Info.plist */,
 				2630826F2E2E0BC700A6D8C4 /* App */,
 				260E77A92E447EB600A25A72 /* Model */,
-				263082712E2E0BFA00A6D8C4 /* ARService */,
+				2633C5C52E48BF6D000C6F0D /* Services */,
 				263082702E2E0BE300A6D8C4 /* Views */,
-				26EA8CA62E423733004050F2 /* DocumentPicker */,
-				26031D6E2E460DD0001C302E /* ThumbnailGenerator */,
 				26EA8CAF2E425A45004050F2 /* Components */,
 				260E77C02E44A78D00A25A72 /* Constants */,
+				2633C5B92E489415000C6F0D /* Errors */,
 				26B5106E2E42FC0600D4A76B /* Extension */,
 				263082612E2E0BA800A6D8C4 /* Assets.xcassets */,
 				2630826D2E2E0BC000A6D8C4 /* Preview Content */,
@@ -255,8 +286,8 @@
 		263082762E2E0C7D00A6D8C4 /* StairsARView */ = {
 			isa = PBXGroup;
 			children = (
-				2630827A2E2E0CB800A6D8C4 /* ViewModel */,
 				263082772E2E0C8E00A6D8C4 /* Views */,
+				2630827A2E2E0CB800A6D8C4 /* ViewModel */,
 			);
 			path = StairsARView;
 			sourceTree = "<group>";
@@ -275,6 +306,84 @@
 				263082782E2E0CB200A6D8C4 /* ARViewerViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2633C5B12E4880C3000C6F0D /* ARModelViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5BC2E489A54000C6F0D /* AROnboardingViewModelTests */,
+				2633C5B42E48931E000C6F0D /* ThumbnailGeneratorTests */,
+			);
+			path = ARModelViewerTests;
+			sourceTree = "<group>";
+		};
+		2633C5B42E48931E000C6F0D /* ThumbnailGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5B52E489324000C6F0D /* Tests */,
+				2633C5B62E489331000C6F0D /* Moc */,
+			);
+			path = ThumbnailGeneratorTests;
+			sourceTree = "<group>";
+		};
+		2633C5B52E489324000C6F0D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5B22E4882D5000C6F0D /* ThumbnailGeneratorTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2633C5B62E489331000C6F0D /* Moc */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5B72E489353000C6F0D /* MockGenerator.swift */,
+			);
+			path = Moc;
+			sourceTree = "<group>";
+		};
+		2633C5B92E489415000C6F0D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5BA2E48944C000C6F0D /* ARModelViewerErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		2633C5BC2E489A54000C6F0D /* AROnboardingViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5BD2E489A62000C6F0D /* Tests */,
+				2633C5BE2E489A68000C6F0D /* Moc */,
+			);
+			path = AROnboardingViewModelTests;
+			sourceTree = "<group>";
+		};
+		2633C5BD2E489A62000C6F0D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5C32E489B34000C6F0D /* AROnboardingViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2633C5BE2E489A68000C6F0D /* Moc */ = {
+			isa = PBXGroup;
+			children = (
+				2633C5BF2E489A86000C6F0D /* MockStorageService.swift */,
+				2633C5C12E489AB5000C6F0D /* MockTimerProvider.swift */,
+			);
+			path = Moc;
+			sourceTree = "<group>";
+		};
+		2633C5C52E48BF6D000C6F0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				263082712E2E0BFA00A6D8C4 /* ARService */,
+				26EA8CA62E423733004050F2 /* DocumentPicker */,
+				26031D6E2E460DD0001C302E /* ThumbnailGenerator */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		26B5106E2E42FC0600D4A76B /* Extension */ = {
@@ -335,6 +444,26 @@
 			productReference = 2630825A2E2E0BA700A6D8C4 /* ARModelViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2633C5A72E4880B2000C6F0D /* ARModelViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2633C5AE2E4880B3000C6F0D /* Build configuration list for PBXNativeTarget "ARModelViewerTests" */;
+			buildPhases = (
+				2633C5A42E4880B2000C6F0D /* Sources */,
+				2633C5A52E4880B2000C6F0D /* Frameworks */,
+				2633C5A62E4880B2000C6F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2633C5AD2E4880B3000C6F0D /* PBXTargetDependency */,
+			);
+			name = ARModelViewerTests;
+			packageProductDependencies = (
+			);
+			productName = ARModelViewerTests;
+			productReference = 2633C5A82E4880B2000C6F0D /* ARModelViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +476,10 @@
 				TargetAttributes = {
 					263082592E2E0BA700A6D8C4 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					2633C5A72E4880B2000C6F0D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 263082592E2E0BA700A6D8C4;
 					};
 				};
 			};
@@ -365,6 +498,7 @@
 			projectRoot = "";
 			targets = (
 				263082592E2E0BA700A6D8C4 /* ARModelViewer */,
+				2633C5A72E4880B2000C6F0D /* ARModelViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +510,13 @@
 			files = (
 				26B510722E42FC6100D4A76B /* Manrope.ttf in Resources */,
 				263082622E2E0BA800A6D8C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2633C5A62E4880B2000C6F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +543,7 @@
 				2630825E2E2E0BA700A6D8C4 /* ARModelViewApp.swift in Sources */,
 				260E77B92E4496EC00A25A72 /* Extension+Transform.swift in Sources */,
 				263082752E2E0C6B00A6D8C4 /* ARModelViewer.swift in Sources */,
+				2633C5BB2E48944C000C6F0D /* ARModelViewerErrors.swift in Sources */,
 				260E77BB2E44975B00A25A72 /* Extension+simd_float4.swift in Sources */,
 				26031D692E45C396001C302E /* Extension+Bundle.swift in Sources */,
 				26031D782E46198D001C302E /* ARModelSelectionViewModel.swift in Sources */,
@@ -415,7 +557,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2633C5A42E4880B2000C6F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2633C5C42E489B34000C6F0D /* AROnboardingViewModelTests.swift in Sources */,
+				2633C5C22E489AB5000C6F0D /* MockTimerProvider.swift in Sources */,
+				2633C5B32E4882D5000C6F0D /* ThumbnailGeneratorTests.swift in Sources */,
+				2633C5B82E489353000C6F0D /* MockGenerator.swift in Sources */,
+				2633C5C02E489A86000C6F0D /* MockStorageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2633C5AD2E4880B3000C6F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 263082592E2E0BA700A6D8C4 /* ARModelViewer */;
+			targetProxy = 2633C5AC2E4880B3000C6F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		263082662E2E0BA800A6D8C4 /* Debug */ = {
@@ -556,6 +718,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,6 +755,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +770,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2633C5AF2E4880B3000C6F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LT54Q8Z33F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.eliseev.dmitry.ARModelViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARModelViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARModelViewer";
+			};
+			name = Debug;
+		};
+		2633C5B02E4880B3000C6F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LT54Q8Z33F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.eliseev.dmitry.ARModelViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARModelViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARModelViewer";
 			};
 			name = Release;
 		};
@@ -626,6 +826,15 @@
 			buildConfigurations = (
 				263082692E2E0BA800A6D8C4 /* Debug */,
 				2630826A2E2E0BA800A6D8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2633C5AE2E4880B3000C6F0D /* Build configuration list for PBXNativeTarget "ARModelViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2633C5AF2E4880B3000C6F0D /* Debug */,
+				2633C5B02E4880B3000C6F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

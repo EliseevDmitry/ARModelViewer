@@ -8,6 +8,8 @@
 import SwiftUI
 import QuickLookThumbnailing
 
+/// Protocol defining thumbnail generation from a URL,
+/// enabling the creation of mock objects for testing and facilitating dependency injection
 protocol IThumbnailGenerator {
     func generate(for url: URL, size: CGSize) async throws -> UIImage
 }
@@ -16,6 +18,9 @@ final class ThumbnailGenerator: IThumbnailGenerator { }
 
 // MARK: - Public Functions
 extension ThumbnailGenerator {
+    /// Asynchronous method to generate a thumbnail image for a file at a given URL and size
+    /// Uses QLThumbnailGenerator from QuickLookThumbnailing to obtain the best available representation
+    /// Throws a custom thumbnailGenerationFailed error in case of failure
     func generate(for url: URL, size: CGSize) async throws -> UIImage {
         let request = await QLThumbnailGenerator.Request(
             fileAt: url,
@@ -29,10 +34,11 @@ extension ThumbnailGenerator {
                 if let image = thumbnail?.uiImage {
                     continuation.resume(returning: image)
                 } else {
-                    continuation.resume(throwing: error ?? NSError(domain: "ThumbnailError", code: -1))
+                    continuation.resume(
+                        throwing: ARModelViewerErrors.thumbnailGenerationFailed(underlyingError: error)
+                    )
                 }
             }
         }
     }
 }
-

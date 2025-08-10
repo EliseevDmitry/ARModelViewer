@@ -7,8 +7,8 @@
 
 import SwiftUI
 
+/// Custom font style for main titles in the ARModelViewer app
 extension Font {
-    /// Custom font style for main titles in the ARModelViewer app
     static func stairsTitle() -> Font {
         return Font.custom("Manrope-Bold", size: 24)
     }

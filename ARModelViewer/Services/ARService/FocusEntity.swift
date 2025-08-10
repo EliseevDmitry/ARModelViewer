@@ -1,5 +1,5 @@
 //
-//  CustomFocusEntity.swift
+//  FocusEntity.swift
 //  ARModelViewer
 //
 //  Created by Dmitriy Eliseev on 31.07.2025.
@@ -16,26 +16,27 @@ final class FocusEntity: Entity, HasModel, HasAnchoring {
     init(arView: ARView) {
         super.init()
         self.arView = arView
-        addStartPoint(plane:
-            PlaneSize(
-                width: StartPointConstants.planeWidth,
-                depth: StartPointConstants.planeDepth,
-                cornerRadius: StartPointConstants.cornerRadius
-            )
+        addStartPoint(
+            plane:
+                PlaneSize(
+                    width: StartPointConstants.planeWidth,
+                    depth: StartPointConstants.planeDepth,
+                    cornerRadius: StartPointConstants.cornerRadius
+                )
         )
+        arView.scene.addAnchor(self)
     }
     
+    @available(*, unavailable)
     required init() {
         fatalError("init() has not been implemented")
     }
-
 }
 
 // MARK: - Private Functions
 extension FocusEntity {
-    
     private func addStartPoint(plane: PlaneSize, color: UIColor = StartPointConstants.startPointColor) {
-        guard let arView = arView else { return }
+        guard arView != nil else { return }
         // Create start point entity
         let mesh = MeshResource.generatePlane(
             width: plane.width,
@@ -50,17 +51,14 @@ extension FocusEntity {
         // Creating a model component and anchoring the entity in world coordinates
         self.model = ModelComponent(mesh: mesh, materials: [material])
         self.anchoring = AnchoringComponent(.world(transform: matrix_identity_float4x4))
-        arView.scene.addAnchor(self)
     }
-    
 }
 
 // MARK: - Public Functions
 extension FocusEntity {
-    
     func updateStartPoint() {
         guard let arView = arView else {
-            self.isEnabled = false
+            isEnabled = false
             return
         }
         //Definition of the screen center
@@ -73,12 +71,11 @@ extension FocusEntity {
             from: center, allowing: .estimatedPlane,
             alignment: .horizontal
         ).first else {
-            self.isEnabled = false
+            isEnabled = false
             return
         }
         //Updating the position
-        self.transform = Transform(matrix: result.worldTransform)
-        self.isEnabled = true
+        transform = Transform(matrix: result.worldTransform)
+        isEnabled = true
     }
-    
 }

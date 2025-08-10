@@ -18,6 +18,13 @@ final class AROnboardingViewModel: ObservableObject {
     private var timer: AnyCancellable?
     
     // MARK: - Initialization
+    /// Initializes the onboarding view model with dependency injection for storage and timer services
+    /// This enables easier testing with mock implementations
+    /// - Parameters:
+    ///   - storage: Storage service for persisting onboarding completion state
+    ///   - timerProvider: Timer provider to control step switching timing
+    ///   - onboardingData: Array of onboarding steps to display
+    ///   - shouldStartTimer: Flag to control whether the auto-advancing timer should start immediately
     init(
         storage: IStorageService = Storage(),
         timerProvider: ITimerProvider = TimerProvider(),
@@ -42,6 +49,7 @@ final class AROnboardingViewModel: ObservableObject {
 
 // MARK: - Public Functions
 extension AROnboardingViewModel {
+    /// Marks onboarding as finished, persists this state, and stops the auto-advancing timer
     func skipOnboarding() {
         deleteTimer()
         setOnboarding()
@@ -51,6 +59,7 @@ extension AROnboardingViewModel {
 
 // MARK: - Private Functions
 extension AROnboardingViewModel {
+    /// Starts a timer that auto-advances onboarding steps every 4 seconds
     private func setTimer() {
         timer = timerProvider.start(every: 4)
             .sink { [weak self] _ in
@@ -60,10 +69,12 @@ extension AROnboardingViewModel {
             }
     }
     
+    /// Persists onboarding completion state in storage
     private func setOnboarding() {
         storageService.setKey(key: Onboarding.storageKey)
     }
     
+    /// Cancels and invalidates the onboarding timer
     private func deleteTimer() {
         timer?.cancel()
     }

@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct SelectARModelView: View {
-    @StateObject private var viewModel: ARModelSelectionViewModel
-    init() {
-        _viewModel = StateObject(wrappedValue: ARModelSelectionViewModel())
-    }
-    @State private var isShow = false
+    @StateObject
+    private var viewModel = ARModelSelectionViewModel()
+    @State
+    private var isShow = false
     var body: some View {
         NavigationStack {
             List {
@@ -27,10 +26,16 @@ struct SelectARModelView: View {
     
     private var bundleModels: some View {
         Section(SelectARModels.titleFirstSection) {
-            LazyVStack {
-                ForEach(BundleUSDZFiles.objects.compactMap(viewModel.getUSDZFileWithURL), id: \.id) { model in
-                    ModelItemView(model: model)
-                }
+                ForEach(
+                    BundleUSDZFiles.objects.compactMap(viewModel.getUSDZFileWithURL),
+                    id: \.url
+                ) { model in
+                    NavigationLink {
+                        ARModelViewer(url: model.url)
+                    } label: {
+                        ModelItemView(model: model)
+                    }
+                
             }
         }
     }
@@ -50,7 +55,11 @@ struct SelectARModelView: View {
                 DocumentPicker(usdzDocumentURL: $viewModel.usdzURL)
             }
             if let model = viewModel.model {
-                ModelItemView(model: model)
+                NavigationLink {
+                    ARModelViewer(url: model.url)
+                } label: {
+                    ModelItemView(model: model)
+                }
             }
         }
     }

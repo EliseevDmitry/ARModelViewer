@@ -7,21 +7,24 @@
 
 import SwiftUI
 
+/// A list item view that displays information about a 3D model
+/// Includes the model's name and its thumbnail generated using QuickLookThumbnailing
 struct ModelItemView: View {
-    @StateObject private var viewModel: ModelItemViewModel
     let model: USDZFile
-    init(model: USDZFile) {
-        self.model = model
-        _viewModel = StateObject(wrappedValue: ModelItemViewModel())
-    }
+    @StateObject
+    private var viewModel = ModelItemViewModel()
     var body: some View {
         HStack{
             Text(model.name.uppercased())
             Spacer()
             imageThumbnail
         }
-        .task(id: model.id) {
-            await viewModel.getImage(url: model.url)
+        .task(id: model.url) {
+            do {
+                try await viewModel.getImageAndName(url: model.url)
+            } catch {
+                print(error)
+            }
         }
     }
     

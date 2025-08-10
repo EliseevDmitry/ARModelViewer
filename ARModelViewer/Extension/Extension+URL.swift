@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Returns the filename without its extension
 extension URL {
     var usdzFileNameWithoutExtension: String {
         self.deletingPathExtension().lastPathComponent

@@ -14,13 +14,14 @@ struct PlaneSize {
     let cornerRadius: Float
 }
 
-struct OnboardingStep {
+// The Equatable protocol is implemented to support XCTAssertEqual() assertions in test cases
+struct OnboardingStep: Equatable {
     let text: String
     let systemImageName: String
 }
 
-struct USDZFile: Identifiable {
-    let id: UUID = UUID()
+// In ForEach and .task(id:), the url is used as a unique identifier for correct re-rendering and task execution
+struct USDZFile {
     let name: String
     let url: URL
 }
