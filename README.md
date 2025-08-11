@@ -33,6 +33,30 @@ The module provides users with a convenient and intuitive interface for visualiz
 - Event streams for model loading and onboarding display are managed using Combine.  
 - All business logic, including services and ViewModels, is covered by unit tests.
 
+## Resources and Links
+
+- R-gallery company — [r-gallery.ru](https://www.r-gallery.ru/ulica_akademgorodok_kja/)  
+  (Local 3D staircase model in the app bundle corresponds to the real object on the company website)  
+- Additional 3D model example (robot) taken from Apple’s official resource:  
+  Apple Developer AR Quick Look
+
+---
+
+## Demo Screenshots
+
+Below are portrait-oriented screenshots demonstrating the ARModelViewer app in action:
+
+<p align="center">
+  <img src="Screenshots/step1.jpeg" width="150" alt="Screenshot 1" style="margin-right: 10px;" />
+  <img src="Screenshots/step2.jpeg" width="150" alt="Screenshot 2" style="margin-right: 10px;" />
+  <img src="Screenshots/step3.jpeg" width="150" alt="Screenshot 3" style="margin-right: 10px;" />
+  <img src="Screenshots/step4.jpeg" width="150" alt="Screenshot 4" style="margin-right: 10px;" />
+  <img src="Screenshots/step5.jpeg" width="150" alt="Screenshot 5" style="margin-right: 10px;" />
+  <img src="Screenshots/step6.jpeg" width="150" alt="Screenshot 6" />
+</p>
+
+---
+
 ## Technologies and Architecture
 
 - **Language:** Swift 5+  
@@ -58,7 +82,5 @@ The module provides users with a convenient and intuitive interface for visualiz
 
 ## Resources and Links
 
-- R-gallery company — [r-gallery.ru](https://www.r-gallery.ru/ulica_akademgorodok_kja/) 
-(Local 3D staircase model in the app bundle corresponds to the real object on the company website)  
-- Additional 3D model example (robot) taken from Apple’s official resource:  
-Apple Developer AR Quick Look
+- R-gallery company — [r-gallery.ru](https://www.r-gallery.ru/ulica_akademgorodok_kja/)  
+- Apple Developer AR Quick Look: [https://developer.apple.com/augmented-reality/quick-look/](https://developer.apple.com/augmented-reality/quick-look/)
