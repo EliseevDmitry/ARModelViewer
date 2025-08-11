@@ -40,14 +40,6 @@
 		26B510722E42FC6100D4A76B /* Manrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26B510712E42FC6100D4A76B /* Manrope.ttf */; };
 		26B510752E43005200D4A76B /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B510742E43005200D4A76B /* Extension+View.swift */; };
 		26B8130D2E49F6B900D8BFB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8130C2E49F6B900D8BFB3 /* AppDelegate.swift */; };
-		26B813452E4A018500D8BFB3 /* step4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B813402E4A018500D8BFB3 /* step4.jpeg */; };
-		26B813462E4A018500D8BFB3 /* step7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B813432E4A018500D8BFB3 /* step7.jpeg */; };
-		26B813472E4A018500D8BFB3 /* step5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B813412E4A018500D8BFB3 /* step5.jpeg */; };
-		26B813482E4A018500D8BFB3 /* step1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B8133D2E4A018500D8BFB3 /* step1.jpeg */; };
-		26B813492E4A018500D8BFB3 /* step3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B8133F2E4A018500D8BFB3 /* step3.jpeg */; };
-		26B8134A2E4A018500D8BFB3 /* step6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B813422E4A018500D8BFB3 /* step6.jpeg */; };
-		26B8134B2E4A018500D8BFB3 /* step8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B813442E4A018500D8BFB3 /* step8.jpeg */; };
-		26B8134C2E4A018500D8BFB3 /* step2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 26B8133E2E4A018500D8BFB3 /* step2.jpeg */; };
 		26EA8CA82E423770004050F2 /* DocumentPikcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CA72E423770004050F2 /* DocumentPikcer.swift */; };
 		26EA8CB12E425A6B004050F2 /* AROnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CB02E425A6B004050F2 /* AROnboardingView.swift */; };
 /* End PBXBuildFile section */
@@ -99,14 +91,6 @@
 		26B510732E42FC8F00D4A76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B510742E43005200D4A76B /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		26B8130C2E49F6B900D8BFB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26B8133D2E4A018500D8BFB3 /* step1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step1.jpeg; sourceTree = "<group>"; };
-		26B8133E2E4A018500D8BFB3 /* step2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step2.jpeg; sourceTree = "<group>"; };
-		26B8133F2E4A018500D8BFB3 /* step3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step3.jpeg; sourceTree = "<group>"; };
-		26B813402E4A018500D8BFB3 /* step4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step4.jpeg; sourceTree = "<group>"; };
-		26B813412E4A018500D8BFB3 /* step5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step5.jpeg; sourceTree = "<group>"; };
-		26B813422E4A018500D8BFB3 /* step6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step6.jpeg; sourceTree = "<group>"; };
-		26B813432E4A018500D8BFB3 /* step7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step7.jpeg; sourceTree = "<group>"; };
-		26B813442E4A018500D8BFB3 /* step8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = step8.jpeg; sourceTree = "<group>"; };
 		26EA8CA72E423770004050F2 /* DocumentPikcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPikcer.swift; sourceTree = "<group>"; };
 		26EA8CB02E425A6B004050F2 /* AROnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -433,14 +417,6 @@
 		26B8130E2E49FCD700D8BFB3 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				26B8133D2E4A018500D8BFB3 /* step1.jpeg */,
-				26B8133E2E4A018500D8BFB3 /* step2.jpeg */,
-				26B8133F2E4A018500D8BFB3 /* step3.jpeg */,
-				26B813402E4A018500D8BFB3 /* step4.jpeg */,
-				26B813412E4A018500D8BFB3 /* step5.jpeg */,
-				26B813422E4A018500D8BFB3 /* step6.jpeg */,
-				26B813432E4A018500D8BFB3 /* step7.jpeg */,
-				26B813442E4A018500D8BFB3 /* step8.jpeg */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -551,14 +527,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B813452E4A018500D8BFB3 /* step4.jpeg in Resources */,
-				26B813462E4A018500D8BFB3 /* step7.jpeg in Resources */,
-				26B813472E4A018500D8BFB3 /* step5.jpeg in Resources */,
-				26B813482E4A018500D8BFB3 /* step1.jpeg in Resources */,
-				26B813492E4A018500D8BFB3 /* step3.jpeg in Resources */,
-				26B8134A2E4A018500D8BFB3 /* step6.jpeg in Resources */,
-				26B8134B2E4A018500D8BFB3 /* step8.jpeg in Resources */,
-				26B8134C2E4A018500D8BFB3 /* step2.jpeg in Resources */,
 				26B510722E42FC6100D4A76B /* Manrope.ttf in Resources */,
 				263082622E2E0BA800A6D8C4 /* Assets.xcassets in Resources */,
 			);
