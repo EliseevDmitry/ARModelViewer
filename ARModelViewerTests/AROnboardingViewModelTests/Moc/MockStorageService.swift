@@ -10,7 +10,10 @@ import Foundation
 
 final class MockStorageService: IStorageService {
     private var storage: [String: Bool] = [:]
-    
+}
+
+// MARK: - Public Functions
+extension MockStorageService {
     func setKey(key: String) {
         storage[key] = true
     }
