@@ -39,6 +39,7 @@
 		26B510702E42FC2900D4A76B /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5106F2E42FC2900D4A76B /* Extension+Font.swift */; };
 		26B510722E42FC6100D4A76B /* Manrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26B510712E42FC6100D4A76B /* Manrope.ttf */; };
 		26B510752E43005200D4A76B /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B510742E43005200D4A76B /* Extension+View.swift */; };
+		26B8130D2E49F6B900D8BFB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8130C2E49F6B900D8BFB3 /* AppDelegate.swift */; };
 		26EA8CA82E423770004050F2 /* DocumentPikcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CA72E423770004050F2 /* DocumentPikcer.swift */; };
 		26EA8CB12E425A6B004050F2 /* AROnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA8CB02E425A6B004050F2 /* AROnboardingView.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		26B510712E42FC6100D4A76B /* Manrope.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Manrope.ttf; sourceTree = "<group>"; };
 		26B510732E42FC8F00D4A76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		26B510742E43005200D4A76B /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		26B8130C2E49F6B900D8BFB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EA8CA72E423770004050F2 /* DocumentPikcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPikcer.swift; sourceTree = "<group>"; };
 		26EA8CB02E425A6B004050F2 /* AROnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +261,7 @@
 		2630826F2E2E0BC700A6D8C4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				26B8130B2E49F69B00D8BFB3 /* ApplicationDelegate */,
 				2630825D2E2E0BA700A6D8C4 /* ARModelViewApp.swift */,
 			);
 			path = App;
@@ -402,6 +405,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		26B8130B2E49F69B00D8BFB3 /* ApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				26B8130C2E49F6B900D8BFB3 /* AppDelegate.swift */,
+			);
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
 		26EA8CA62E423733004050F2 /* DocumentPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,6 +542,7 @@
 				2630827E2E2E159600A6D8C4 /* FocusEntity.swift in Sources */,
 				260E77DD2E45135900A25A72 /* TimerProvider.swift in Sources */,
 				263082602E2E0BA700A6D8C4 /* SelectARModelView.swift in Sources */,
+				26B8130D2E49F6B900D8BFB3 /* AppDelegate.swift in Sources */,
 				260E77DB2E45132800A25A72 /* Storage.swift in Sources */,
 				260E77B72E44963600A25A72 /* Extension+ModelEntity.swift in Sources */,
 				26B510752E43005200D4A76B /* Extension+View.swift in Sources */,

@@ -12,7 +12,10 @@ import XCTest
 final class MockGenerator: IThumbnailGenerator {
     var imageToReturn: UIImage?
     var errorToReturn: Error?
-    
+}
+
+// MARK: - Public Functions
+extension MockGenerator {
     func generate(for url: URL, size: CGSize) async throws -> UIImage {
         if let error = errorToReturn {
             throw error
