@@ -11,7 +11,7 @@ struct SelectARModelView: View {
     @StateObject
     private var viewModel = ARModelSelectionViewModel()
     @State
-    private var isShow = false
+    private var isShowingDocumentPicker = false
     var body: some View {
         NavigationStack {
             List {
@@ -24,6 +24,7 @@ struct SelectARModelView: View {
         }
     }
     
+    // Section for models from the bundle
     private var bundleModels: some View {
         Section(SelectARModels.titleFirstSection) {
                 ForEach(
@@ -35,23 +36,21 @@ struct SelectARModelView: View {
                     } label: {
                         ModelItemView(model: model)
                     }
-                
             }
         }
     }
     
+    // Section for models from the file system
     private var fileManagerModels: some View {
         Section(SelectARModels.titleSecondSection) {
-            HStack(alignment: .center){
                 Button(SelectARModels.buttonTitle) {
-                    isShow.toggle()
+                    isShowingDocumentPicker.toggle()
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
                 .padding(.vertical, 2)
-            }
             .frame(maxWidth: .infinity)
-            .sheet(isPresented: $isShow) {
+            .sheet(isPresented: $isShowingDocumentPicker) {
                 DocumentPicker(usdzDocumentURL: $viewModel.usdzURL)
             }
             if let model = viewModel.model {

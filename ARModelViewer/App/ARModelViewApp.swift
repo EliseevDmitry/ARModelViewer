@@ -12,7 +12,6 @@ struct ARModelViewApp: App {
     var body: some Scene {
         WindowGroup {
            SelectARModelView()
-            //ARModelViewer(url: Bundle.main.usdzURL("robot")!)
         }
     }
 }

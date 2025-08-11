@@ -25,7 +25,6 @@ final class ARModelSelectionViewModel: ObservableObject {
             .sink { [weak self] url in
                 guard let self else { return }
                let model = self.getModelFromURL(url: url)
-                print(model)
                 self.model = model
             }
             .store(in: &cancellables)

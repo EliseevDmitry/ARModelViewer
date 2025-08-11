@@ -8,22 +8,29 @@
 import Foundation
 import RealityKit
 
+/// ViewModel for loading and storing a 3D model from a URL for AR viewing
 final class ARViewerViewModel: ObservableObject {
     @Published var modelEntity: ModelEntity? = nil
     private let modelURL: URL
+    
+    // MARK: - Initialization
     init(url: URL){
         self.modelURL = url
     }
-    
-    /// Simulates loading a 3D model from a network or remote source with a delay
+}
+
+// MARK: - Public Functions
+extension ARViewerViewModel {
+    /// Asynchronously loads a 3D model from modelURL with a delay to simulate network loading
+    /// Upon successful loading, updates modelEntity for UI display
     @MainActor
     func getEntity() async {
         do {
             try await Task.sleep(nanoseconds: 4 * 1_000_000_000)
-            let entity = try await  ModelEntity(contentsOf: modelURL)//ModelEntity(named: modelName)
+            let entity = try await  ModelEntity(contentsOf: modelURL)
             self.modelEntity = entity
         } catch {
-            print("Ошибка загрузки модели: \(error)")
+            print("Model loading error: \(error)")
         }
-    } 
+    }
 }

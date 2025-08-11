@@ -13,7 +13,10 @@ protocol ITimerProvider {
 }
 
 /// Timer service for DI and testing
-final class TimerProvider: ITimerProvider {
+final class TimerProvider: ITimerProvider { }
+
+// MARK: - Public Functions
+extension TimerProvider {
     func start(every interval: TimeInterval) -> AnyPublisher<Date, Never> {
         Timer.publish(every: interval, on: .main, in: .common)
             .autoconnect()

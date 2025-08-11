@@ -15,7 +15,10 @@ protocol IStorageService {
 /// Storage service for DI and testing
 final class Storage: IStorageService {
     private var storage: UserDefaults = .standard
-    
+}
+
+// MARK: - Public Functions
+extension Storage {
     func setKey(key: String) {
         storage.set(true, forKey: key)
     }
