@@ -52,7 +52,9 @@ Below are portrait-oriented screenshots demonstrating the ARModelViewer app in a
   <img src="Screenshots/step3.jpeg" width="150" alt="Screenshot 3" style="margin-right: 10px;" />
   <img src="Screenshots/step4.jpeg" width="150" alt="Screenshot 4" style="margin-right: 10px;" />
   <img src="Screenshots/step5.jpeg" width="150" alt="Screenshot 5" style="margin-right: 10px;" />
-  <img src="Screenshots/step6.jpeg" width="150" alt="Screenshot 6" />
+  <img src="Screenshots/step6.jpeg" width="150" alt="Screenshot 6" style="margin-right: 10px;" />
+  <img src="Screenshots/step7.jpeg" width="150" alt="Screenshot 7" style="margin-right: 10px;" />
+  <img src="Screenshots/step8.jpeg" width="150" alt="Screenshot 8" />
 </p>
 
 ---
